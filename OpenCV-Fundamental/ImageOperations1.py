@@ -37,4 +37,3 @@ const = cv.copyMakeBorder(img, 5, 5, 5, 5, cv.BORDER_CONSTANT, value=[0, 255, 0]
 cv.imshow("Image", const)
 cv.waitKey(0)
 cv.destroyAllWindows()
-
