@@ -1,5 +1,14 @@
 import cv2 as cv
 
+def do_nothing(x):
+    pass
+
+cv.namedWindow('Image')
+# Trackbars for color change
+cv.createTrackbar('Red', 'Image', 0, 255, do_nothing)
+cv.createTrackbar('Green', 'Image', 0, 255, do_nothing)
+cv.createTrackbar('Blue', 'Image', 0, 255, do_nothing)
+
 img_path = "Image/Lena.png"
 img = cv.imread(img_path, 1)
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
