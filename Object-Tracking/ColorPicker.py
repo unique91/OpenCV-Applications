@@ -59,26 +59,3 @@ while True:
 
 video.release()
 cv.destroyAllWindows()
-
-'''
-# BGR-Values
-blue = np.uint8([[[255, 0, 0]]])
-green = np.uint8([[[0, 255, 0]]])
-red = np.uint8([[[0, 0, 255]]])
-
-# Convert to HSV-Values
-# HSV stands for Hue, Saturation and Value
-hsv_blue = cv.cvtColor(blue, cv.COLOR_BGR2HSV)
-hsv_green = cv.cvtColor(green, cv.COLOR_BGR2HSV)
-hsv_red = cv.cvtColor(red, cv.COLOR_BGR2HSV)
-
-# Display values
-print("BGR - Blue: ", blue)
-print("BGR - Green: ", green)
-print("BGR - Red: ", red)
-print("HSV - Blue: ", hsv_blue)
-print("HSV - Green: ", hsv_green)
-print("HSV - Red: ", hsv_red)
-
-# Find lower and upper limits
-'''
